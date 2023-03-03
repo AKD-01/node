@@ -1,3 +1,6 @@
+// Chalk Package Usage
+const chalk = require("chalk");
+console.log(chalk.red("Hello"));
 
 
 
@@ -7,7 +10,13 @@
 
 
 
-
+/*
+Colors Package usage
+const colors = require('colors');
+console.log("hello".red);
+console.log("hello".green);
+console.log("You".blue);
+*/
 /*const http = require('http');
 
 http.createServer((req,res) => {

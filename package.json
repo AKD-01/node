@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AKD-01/node#readme",
   "dependencies": {
+    "chalk": "^5.2.0",
     "colors": "^1.4.0",
     "simple-node-logger": "^21.8.12"
   }
