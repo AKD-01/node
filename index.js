@@ -27,6 +27,16 @@ output: hello
 
 //Make a simple api
 /* 
+data.js
+const data = [
+    {name:'anjali', age: 21},
+    {name:'amit', age: 20},
+    {name:'alice', age: 23},
+]
+
+module.exports=data;
+
+index.js
 const http = require("http");
 const data = require('./data');
 
