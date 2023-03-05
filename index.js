@@ -1,5 +1,7 @@
-
-
+const fs = require('fs');
+const path = require('path');
+const dirPath = path.join(__dirname, 'files');
+console.log(dirPath);
 /*
 create file with input or delete file with input
 const fs = require('fs');
