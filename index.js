@@ -1,3 +1,21 @@
+/* CRUD with file system and also rename
+const fs = require('fs');
+const path = require('path');
+const dirPath = path.join(__dirname,'crud');
+const filePath = `${dirPath}/Hello.txt`;
+
+//fs.writeFileSync(filePath,"Hello World"); // Create File
+/*fs.readFile(filePath, 'utf-8', (err,file) => { //Read File
+    console.log(file);
+})*/
+/*fs.appendFile(filePath, ', I am Anjali!!', (err) =>{ //Update File
+    if(!err) console.log("File Updated");
+})*/
+/*fs.rename(filePath, `${dirPath}/helloWorld.txt`, (err) => { //Rename File
+    if(!err) console.log("File Renamed");
+})*/
+//fs.unlinkSync(`${dirPath}/helloWorld.txt`); //Delete File
+
 /* use path module
 const fs = require('fs');
 const path = require('path');
