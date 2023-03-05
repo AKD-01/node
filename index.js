@@ -1,7 +1,19 @@
+/* use path module
 const fs = require('fs');
 const path = require('path');
 const dirPath = path.join(__dirname, 'files');
-console.log(dirPath);
+// makes files in a folder
+for(i=0; i<5; i++) 
+  {
+   fs.writeFileSync(`${dirPath}/hello${i}.txt`, "hello world");
+  }
+// get file names and print
+fs.readdir(dirPath, (err, files) => {
+    files.forEach((item)=> {
+        console.log("file name is", item);
+    })
+})*/
+
 /*
 create file with input or delete file with input
 const fs = require('fs');
