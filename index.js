@@ -1,7 +1,16 @@
-console.log(process.argv);
+const fs = require('fs');
+
+const input = process.argv;
+fs.writeFileSync(input[2], input[3]);
 
 
 
+
+/* input from command line
+console.log(process.argv[2]);
+terminal: node ./index.js hello
+output: hello 
+*/
 
 //Make a simple api
 /* 
