@@ -1,3 +1,9 @@
+console.log("start exe ...");
+console.log("logic exe ...");
+console.log("complete exe ...");
+
+
+
 /* CRUD with file system and also rename
 const fs = require('fs');
 const path = require('path');
