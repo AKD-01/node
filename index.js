@@ -1,4 +1,31 @@
 
+
+// Handle Asynchronous Data in node js
+/*let a=20;
+let b=0;
+
+let waitingData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(30);
+    },2000);
+})
+    
+waitingData.then((data) => {
+    b=data;
+    console.log(a+b);
+})*/
+
+//Drawback of being asynchronous
+/*let a=20;
+let b=0;
+
+setTimeout(() => {
+    b=30;
+},2000);
+
+console.log(a+b);
+*/
+
 /*Asynchronous basics in node js
 console.log("start exe ...");
 setTimeout(() => {
