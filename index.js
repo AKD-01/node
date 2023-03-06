@@ -1,8 +1,11 @@
+
+/*Asynchronous basics in node js
 console.log("start exe ...");
-console.log("logic exe ...");
+setTimeout(() => {
+    console.log("logic exe ...");
+}, 2000);
 console.log("complete exe ...");
-
-
+*/
 
 /* CRUD with file system and also rename
 const fs = require('fs');
