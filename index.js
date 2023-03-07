@@ -1,4 +1,19 @@
-
+//Architecture of Node js
+/*console.log("Start...");
+setTimeout(()=> {
+    console.log("Two Seconds")
+}, 2000);
+setTimeout(() => {
+    console.log("Zero Second");
+},0);
+console.log("finish..."); */
+//Output:
+/*
+Start...
+finish...
+Zero Second
+Two Seconds
+*/ 
 
 // Handle Asynchronous Data in node js
 /*let a=20;
@@ -174,5 +189,4 @@ console.log(result);
 
 const fsi = require('fs').writeFileSync;
 fsi("abc.txt","coding");
-
 */
