@@ -1,4 +1,5 @@
-
+const express = require('express');
+const app = express();
 
 //Architecture of Node js
 /*console.log("Start...");
