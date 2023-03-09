@@ -1,4 +1,14 @@
+//Req and response's concept
+/*const express = require('express');
+const app = express(); //For making express in executable state
 
+app.get('', (req, res) => {
+    console.log("data sent by browser", req.query.name);
+    res.send(`Hello, ${req.query.name}`);
+});
+
+app.listen(4500); // example: http://localhost:4500/?name=anjali
+*/
 
 /* Express Js import and use
 const express = require('express');
