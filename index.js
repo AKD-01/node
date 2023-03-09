@@ -1,3 +1,32 @@
+const express = require('express');
+const app = express(); //For making express in executable state
+
+app.get('', (req, res) => {
+    res.send("<h1>Hello, this is a Home Page.</h1>");
+});
+
+app.get('/about', (req, res) => {
+    res.send(`
+    <input type="text" placeholder="User name" />
+    <button>Click Me</button>
+    `);
+});
+
+app.get('/help', (req,res) => {
+    res.send([
+        {
+            name: 'anjali',
+            age: 21
+        },
+        {
+            name: 'amit',
+            age: 19
+        }
+    ])
+});
+
+app.listen(5000);
+
 //Req and response's concept
 /*const express = require('express');
 const app = express(); //For making express in executable state
