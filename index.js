@@ -1,5 +1,23 @@
+
+
+/* Express Js import and use
 const express = require('express');
-const app = express();
+const app = express(); //For making express in executable state
+
+app.get('', (req, res) => {
+    res.send("Hello, this is a Home Page.");
+});
+
+app.get('/about', (req, res) => {
+    res.send("Hello, this is an About Page.");
+});
+
+app.get('/help', (req,res) => {
+    res.send("Hello, this is a Help Page.")
+});
+
+app.listen(4500);
+*/
 
 //Architecture of Node js
 /*console.log("Start...");
