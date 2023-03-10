@@ -1,14 +1,19 @@
-const express = require('express');
+//Render HTML and JSON data
+/*const express = require('express');
 const app = express(); //For making express in executable state
 
 app.get('', (req, res) => {
-    res.send("<h1>Hello, this is a Home Page.</h1>");
+    res.send(`
+    <h1>Hello, this is a Home Page.</h1>
+    <a href="/about">Go to About Page</a>
+    `);
 });
 
 app.get('/about', (req, res) => {
     res.send(`
-    <input type="text" placeholder="User name" />
+    <input type="text" placeholder="Username" value="${req.query.name}" />
     <button>Click Me</button>
+    <a href="/">Go to Home Page</a>
     `);
 });
 
@@ -26,6 +31,7 @@ app.get('/help', (req,res) => {
 });
 
 app.listen(5000);
+*/
 
 //Req and response's concept
 /*const express = require('express');
