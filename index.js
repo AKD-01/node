@@ -1,4 +1,5 @@
-const express = require('express');
+//Remove extension from URL
+/*const express = require('express');
 const path = require('path');
 
 const app = express();
@@ -19,6 +20,7 @@ app.get('*',(_,res) => {
 })
 
 app.listen(5000);
+*/
 
 //Make HTML pages
 /*const express = require('express');
