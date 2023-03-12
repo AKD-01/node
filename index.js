@@ -1,4 +1,5 @@
-const express = require('express');
+//Template Engine
+/*const express = require('express');
 const path = require('path');
 
 const app = express();
@@ -11,15 +12,24 @@ app.get('',(_,res) => {
 });
 app.get('/about',(_,res) => {
     res.sendFile(`${publicPath}/about.html`);
-})
+});
 app.get('/help',(_,res) => {
     res.sendFile(`${publicPath}/help.html`);
-})
+});
+app.get('/profile',(_,res) => {
+    const user = {
+        name: 'Anjali',
+        age: 21,
+        city: 'New Delhi'
+    }
+    res.render('profile', {user});
+});
 app.get('*',(_,res) => {
     res.sendFile(`${publicPath}/notFound.html`);
-})
+});
 
 app.listen(5000);
+*/
 
 //Remove extension from URL
 /*const express = require('express');
