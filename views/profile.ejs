@@ -10,5 +10,11 @@
     <h1>Welcome <%=user.name%> </h1>
     <h3>Age: <%=user.age%> </h3>
     <h3>City: <%=user.city%> </h3>
+    <!--How to make loop in ejs-->
+    <ul>
+      <% user.skills.forEach((item) => { %>
+        <li><%=item%></li>
+      <%})%>
+    </ul>
   </body>
 </html>
