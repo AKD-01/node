@@ -1,3 +1,16 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (_,res) => {
+    res.send('Welcome to Home Page');
+});
+
+app.get('/users', (_,res) => {
+    res.send('Welcome to Users Page');
+});
+
+app.listen(5000);
+
 //Dynamic Page
 /*const express = require('express');
 const path = require('path');
