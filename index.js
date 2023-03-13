@@ -1,3 +1,35 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const publicPath = path.join(__dirname,'public');
+
+app.set('view engine', 'ejs');
+
+app.get('',(_,res) => {
+    res.sendFile(`${publicPath}/index.html`);
+});
+app.get('/about',(_,res) => {
+    res.sendFile(`${publicPath}/about.html`);
+});
+app.get('/help',(_,res) => {
+    res.sendFile(`${publicPath}/help.html`);
+});
+app.get('/profile',(_,res) => {
+    const user = {
+        name: 'Anjali',
+        age: 21,
+        city: 'New Delhi',
+        skills:  ['php','js','cpp','java','node'],
+    }
+    res.render('profile', {user});
+});
+app.get('*',(_,res) => {
+    res.sendFile(`${publicPath}/notFound.html`);
+});
+
+app.listen(5000);
+
 //Template Engine
 /*const express = require('express');
 const path = require('path');
