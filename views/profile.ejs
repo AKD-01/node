@@ -7,6 +7,7 @@
     <title>Profile Page</title>
   </head>
   <body>
+    <%-include('common/header');%>
     <h1>Welcome <%=user.name%> </h1>
     <h3>Age: <%=user.age%> </h3>
     <h3>City: <%=user.city%> </h3>
@@ -16,5 +17,6 @@
         <li><%=item%></li>
       <%})%>
     </ul>
+    <%-include('common/footer');%>
   </body>
 </html>
