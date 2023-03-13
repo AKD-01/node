@@ -1,4 +1,5 @@
-const express = require('express');
+//Dynamic Page
+/*const express = require('express');
 const path = require('path');
 
 const app = express();
@@ -6,16 +7,16 @@ const publicPath = path.join(__dirname,'public');
 
 app.set('view engine', 'ejs');
 
-app.get('',(_,res) => {
+app.get('', (_,res) => {
     res.sendFile(`${publicPath}/index.html`);
 });
-app.get('/about',(_,res) => {
+app.get('/about', (_,res) => {
     res.sendFile(`${publicPath}/about.html`);
 });
-app.get('/help',(_,res) => {
+app.get('/help', (_,res) => {
     res.sendFile(`${publicPath}/help.html`);
 });
-app.get('/profile',(_,res) => {
+app.get('/profile', (_,res) => {
     const user = {
         name: 'Anjali',
         age: 21,
@@ -27,11 +28,12 @@ app.get('/profile',(_,res) => {
 app.get('/login', (_,res) => {
     res.render('login');
 });
-app.get('*',(_,res) => {
+app.get('*', (_,res) => {
     res.sendFile(`${publicPath}/notFound.html`);
 });
 
 app.listen(5000);
+*/
 
 //Template Engine
 /*const express = require('express');
