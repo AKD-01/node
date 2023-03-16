@@ -1,3 +1,23 @@
+//Make Middleware in different file
+/*const express = require('express');
+const reqFilter = require('./Middleware/middleware');
+const app = express();
+
+app.get('/', (_,res) => {
+    res.send('Welcome to Home Page');
+});
+
+app.get('/users', reqFilter, (_,res) => {
+    res.send('Welcome to Users Page');
+});
+
+app.get('/about', (_,res) => {
+    res.send('Welcome to About Page');
+});
+
+app.listen(5000);
+*/
+
 //Apply middleware on single route
 /*const express = require('express');
 const app = express();
