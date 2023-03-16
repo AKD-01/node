@@ -1,3 +1,33 @@
+//Apply middleware on single route
+/*const express = require('express');
+const app = express();
+
+const reqFilter=(req,res,next) => { //Middleware
+     if(!req.query.age) {
+        res.send("Please provide age");
+     }
+     else if(req.query.age < 18) {
+        res.send("You cannot access page.")
+     }
+     else {
+        next();
+     }
+}
+
+app.get('/', (_,res) => {
+    res.send('Welcome to Home Page');
+});
+
+app.get('/users', reqFilter, (_,res) => {
+    res.send('Welcome to Users Page');
+});
+
+app.get('/about', (_,res) => {
+    res.send('Welcome to About Page');
+});
+
+app.listen(5000);
+*/
 //Middleware
 /*const express = require('express');
 const app = express();
