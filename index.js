@@ -1,3 +1,32 @@
+//Apply Middleware on the group of route
+/*const express = require('express');
+const reqFilter = require('./Middleware/middleware');
+const app = express();
+const route = express.Router();
+
+route.use(reqFilter);
+
+app.get('/', (_,res) => {
+    res.send('Welcome to Home Page');
+});
+
+app.get('/users', (_,res) => {
+    res.send('Welcome to Users Page');
+});
+
+route.get('/about', (_,res) => {
+    res.send('Welcome to About Page');
+});
+
+route.get('/contact', (_,res) => {
+    res.send('Welcome to Contact Page');
+});
+
+app.use('/',route);
+
+app.listen(5000);
+*/
+
 //Make Middleware in different file
 /*const express = require('express');
 const reqFilter = require('./Middleware/middleware');
