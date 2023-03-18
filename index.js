@@ -1,3 +1,18 @@
+const { MongoClient } = require("mongodb");
+const url = "mongodb://0.0.0.0:27017/";
+const client = new MongoClient(url);
+const database = "e-comm";
+
+async function getData() {
+  let result = await client.connect();
+  let db = result.db(database);
+  let collection = db.collection("products");
+  let respone = await collection.find({}).toArray();
+  console.log(respone);
+}
+
+getData();
+
 //Apply Middleware on the group of route
 /*const express = require('express');
 const reqFilter = require('./Middleware/middleware');
@@ -293,7 +308,7 @@ Start...
 finish...
 Zero Second
 Two Seconds
-*/ 
+*/
 
 // Handle Asynchronous Data in node js
 /*let a=20;
