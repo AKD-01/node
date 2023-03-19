@@ -1,18 +1,7 @@
-const { MongoClient } = require("mongodb");
-const url = "mongodb://0.0.0.0:27017/";
-const client = new MongoClient(url);
-const database = "e-comm";
+const dbConnect = require('./mongodb');
 
-async function dbConnect() {
-  let result = await client.connect();
-  let db = result.db(database);
-  return db.collection("products");
-  //let respone = await collection.find({name: 'Iphone 10'}).toArray();
-  //console.log(respone);
-}
-
-/*Used then() to handle promise: dbConnect() method is a promise also toArray method is also a promise. 
-dbConnect().then((res) => {
+//Used then() to handle promise: dbConnect() method is a promise also toArray method is also a promise. 
+/*dbConnect().then((res) => {
     res.find({name: 'Redmi 6'}).toArray().then((data) => {
         console.log(data);
     });
