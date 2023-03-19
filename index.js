@@ -1,4 +1,5 @@
-const dbConnect = require('./mongodb');
+//Make file for db connection - mongodb.js and handle promise
+//const dbConnect = require('./mongodb');
 
 //Used then() to handle promise: dbConnect() method is a promise also toArray method is also a promise. 
 /*dbConnect().then((res) => {
@@ -8,14 +9,13 @@ const dbConnect = require('./mongodb');
 })*/
 
 //async-await is used to handle the promise (USE THIS)
-const main = async () => {
+/*const main = async () => {
     let data = await dbConnect();
     data = await data.find().toArray();
     console.warn(data);
 }
 
-main();
-
+main();*/
 
 //Connect Node with mongoDB
 /*const { MongoClient } = require("mongodb");
