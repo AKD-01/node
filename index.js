@@ -1,4 +1,5 @@
-const { MongoClient } = require("mongodb");
+//Connect Node with mongoDB
+/*const { MongoClient } = require("mongodb");
 const url = "mongodb://0.0.0.0:27017/";
 const client = new MongoClient(url);
 const database = "e-comm";
@@ -11,7 +12,7 @@ async function getData() {
   console.log(respone);
 }
 
-getData();
+getData();*/
 
 //Apply Middleware on the group of route
 /*const express = require('express');
