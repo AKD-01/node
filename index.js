@@ -1,4 +1,7 @@
-//Make file for db connection - mongodb.js and handle promise
+
+
+//Read Data from Mongo DB.
+//Make file for db connection - mongodb.js and handle promise  
 //const dbConnect = require('./mongodb');
 
 //Used then() to handle promise: dbConnect() method is a promise also toArray method is also a promise. 
