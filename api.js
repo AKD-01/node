@@ -2,6 +2,8 @@ const express = require('express');
 const dbConnect = require('./mongodb');
 const app = express();
 
+app
+
 app.get('/', async (req,res) => {
     let data = await dbConnect();
     data = await data.find().toArray();
