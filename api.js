@@ -11,7 +11,7 @@ app.get('/', async (_, res) => {
 });
 
 app.post('/', (req, res) => {
-    res.send({name: "Anjali"});
+    res.send(req.body);
 })
 
 app.listen(5000);
