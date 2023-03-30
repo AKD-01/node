@@ -16,4 +16,8 @@ app.post('/', async (req, res) => {
     res.send(result);
 });
 
+app.put('/', (req, res) => {
+
+});
+
 app.listen(5000);
