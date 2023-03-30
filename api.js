@@ -16,10 +16,10 @@ app.post("/", async (req, res) => {
   res.send(result);
 });
 
-app.put("/", async (req, res) => {
+app.put("/:name", async (req, res) => {
   let data = await dbConnect();
-  let result = data.updateOne({ name: req.body.name }, { $set: req.body });
-  res.send({ result: "updated" });
+  let result = await data.updateOne({ name: req.params.name }, { $set: req.body });
+  res.send(result);
 });
 
 app.listen(5000);
