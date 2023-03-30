@@ -17,7 +17,7 @@ app.post('/', async (req, res) => {
 });
 
 app.put('/', (req, res) => {
-
+    res.send({result:"updated"});
 });
 
 app.listen(5000);
