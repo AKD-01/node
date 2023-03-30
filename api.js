@@ -10,7 +10,8 @@ app.get('/', async (_, res) => {
     res.send(data);
 });
 
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
+    let data = await dbConnect();
     res.send(req.body);
 })
 
