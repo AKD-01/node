@@ -1,7 +1,26 @@
+//CRUD with Mongoose
+const mongoose = require("mongoose");
 
+const saveInDB = async () => {
+  await mongoose.connect("mongodb://0.0.0.0:27017/e-comm");
+  const ProductSchema = new mongoose.Schema({
+    name: String,
+    brand: String,
+    price: Number,
+    category: String,
+  });
+  const ProductsModel = mongoose.model("products", ProductSchema);
+  let data = new ProductsModel({
+    name: "Vivo V13 pro",
+    price: 250,
+    brand: "Vivo",
+    category: "Mobile",
+  });
+  let result = await data.save();
+  console.log(result);
+};
 
-
-
+//saveInDB();
 
 //Start with Mongoose
 /*const mongoose = require("mongoose");
@@ -10,10 +29,17 @@ const main = async () => {
   await mongoose.connect("mongodb://0.0.0.0:27017/e-comm");
   const ProductSchema = new mongoose.Schema({
     name: String,
+    brand: String,
     price: Number,
+    category: String,
   });
-  const ProductsModel = mongoose.model('products', ProductSchema);
-  let data = new ProductsModel({name: "m10", price:1000});
+  const ProductsModel = mongoose.model("products", ProductSchema);
+  let data = new ProductsModel({
+    name: "Vivo V13 pro",
+    price: 250,
+    brand: "Vivo",
+    category: "Mobile",
+  });
   let result = await data.save();
   console.log(result);
 };
