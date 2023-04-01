@@ -1,5 +1,10 @@
+
+
+
+
+
 //Start with Mongoose
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 
 const main = async () => {
   await mongoose.connect("mongodb://0.0.0.0:27017/e-comm");
@@ -13,8 +18,7 @@ const main = async () => {
   console.log(result);
 };
 
-main();
-
+main();*/
 
 //Connect Node with mongoDB
 /*const { MongoClient } = require("mongodb");
