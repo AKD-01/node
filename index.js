@@ -1,3 +1,4 @@
+//Search API in Node with MongoDB
 const express = require("express");
 require("./config");
 const Product = require("./product");
