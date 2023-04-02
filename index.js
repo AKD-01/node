@@ -1,4 +1,4 @@
-//Post API with Mongoose
+//Post, get, delete and API with Mongoose
 const express = require("express");
 require("./config");
 const Product = require("./product");
