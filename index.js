@@ -1,4 +1,5 @@
-const express = require("express");
+//Upload file in node js using Multer 
+/*const express = require("express");
 const multer = require("multer");
 const app = express();
 
@@ -18,6 +19,7 @@ app.post("/upload", upload, (req, res) => {
 });
 
 app.listen(5000);
+*/
 
 //Search API in Node with MongoDB
 /*const express = require("express");
