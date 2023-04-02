@@ -1,3 +1,34 @@
+//Events and EventEmitter
+/*const express = require("express");
+const EventEmitter = require("events");
+const app = express();
+const event = new EventEmitter();
+
+let count = 0;
+
+event.on("countAPI", () => {
+  count++;
+  console.log("event called", count);
+});
+
+app.get("/", (req, res) => {
+  res.send("api called");
+  event.emit("countAPI");
+});
+
+app.get("/search", (req, res) => {
+  res.send("search api called");
+  event.emit("countAPI");
+});
+
+app.get("/update", (req, res) => {
+  res.send("update api called");
+  event.emit("countAPI");
+});
+
+app.listen(5000);
+*/
+
 //OS Module
 /*const os = require('os');
 console.log(os.arch());
@@ -8,7 +39,7 @@ console.log(os.platform());
 console.log(os.userInfo());
 */
 
-//Upload file in node js using Multer 
+//Upload file in node js using Multer
 /*const express = require("express");
 const multer = require("multer");
 const app = express();
