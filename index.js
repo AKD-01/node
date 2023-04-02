@@ -1,4 +1,5 @@
-
+const os = require('os');
+console.log(os.arch());
 
 
 //Upload file in node js using Multer 
