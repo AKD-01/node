@@ -5,8 +5,15 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/search/:key", (req,res) => {
-    res.send("search done");
+app.get("/search/:key", async (req, res) => {
+  let data = await Product.find({
+    //Single field: $or: [{ name: { $regex: req.params.key } }],
+    //Multiple fields:
+    $or: [{ name: { $regex: req.params.key } }],
+    $or: [{ brand: { $regex: req.params.key } }],
+    $or: [{ category: { $regex: req.params.key } }],
+  });
+  res.send(data);
 });
 
 app.listen(5000);
