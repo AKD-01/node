@@ -1,10 +1,19 @@
-//Post, get, delete and API with Mongoose
-const express = require("express");
-require("./config");
-const Product = require("./product");
-
+import express, { json } from "express";
+import "./config";
+import Product from "./product";
 const app = express();
-app.use(express.json());
+
+app.use(json());
+
+app.listen(5000);
+
+//Post, get, delete and API with Mongoose
+/*import express, { json } from "express";
+import "./config";
+import Product, { find, deleteOne, updateOne } from "./product";
+const app = express();
+
+app.use(json());
 
 app.post("/create", async (req, res) => {
   let data = new Product(req.body);
@@ -13,23 +22,24 @@ app.post("/create", async (req, res) => {
 });
 
 app.get("/list", async (_, res) => {
-  let data = await Product.find();
+  let data = await find();
   res.send(data);
 });
 
 app.delete("/delete/:_id", async (req, res) => {
-  //console.log(req.params);
-  let data = await Product.deleteOne(req.params);
+  //console.log(req.params);   
+  let data = await deleteOne(req.params);
   res.send(data);
 });
 
 app.put("/update/:_id", async (req, res) => {
   //console.log(req.params);
-  let data = await Product.updateOne(req.params, { $set: req.body });
+  let data = await updateOne(req.params, { $set: req.body });
   res.send(data);
 });
 
 app.listen(5000);
+*/
 
 //CRUD with Mongoose
 /*const mongoose = require("mongoose");
