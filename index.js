@@ -1,19 +1,23 @@
-import express, { json } from "express";
-import "./config";
-import Product from "./product";
+const express = require("express");
+require("./config");
+const Product = require("./product");
 const app = express();
 
-app.use(json());
+app.use(express.json());
+
+app.get("/search/:key", (req,res) => {
+    res.send("search done");
+});
 
 app.listen(5000);
 
 //Post, get, delete and API with Mongoose
-/*import express, { json } from "express";
-import "./config";
-import Product, { find, deleteOne, updateOne } from "./product";
+/*const express = require("express");
+require("./config");
+const Product = require("./product");
 const app = express();
 
-app.use(json());
+app.use(express.json());
 
 app.post("/create", async (req, res) => {
   let data = new Product(req.body);
