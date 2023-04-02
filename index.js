@@ -1,5 +1,7 @@
+
+
 //Search API in Node with MongoDB
-const express = require("express");
+/*const express = require("express");
 require("./config");
 const Product = require("./product");
 const app = express();
@@ -18,6 +20,7 @@ app.get("/search/:key", async (req, res) => {
 });
 
 app.listen(5000);
+*/
 
 //Post, get, delete and API with Mongoose
 /*const express = require("express");
