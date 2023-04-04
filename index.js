@@ -1,9 +1,16 @@
+//Node js GET API with MySQL
 const express = require("express");
 const con = require("./APIs-MySQL/config");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("done");
+    con.query("select * from users", (err, result) => {
+        if(err) {
+            res.send("error");
+        } else {
+            res.send(result);
+        }
+    });
 });
 
 app.listen(5000);
