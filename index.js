@@ -1,5 +1,5 @@
 //Node js DELETE API with MySQL
-const express = require("express");
+/*const express = require("express");
 const con = require("./APIs-MySQL/config");
 const app = express();
 
@@ -14,6 +14,7 @@ app.delete("/:id", (req, res) => {
 });
 
 app.listen(5000);
+*/
 
 //Node js PUT API with MySQL
 /*const express = require("express");
@@ -615,9 +616,8 @@ setTimeout(()=> {
 setTimeout(() => {
     console.log("Zero Second");
 },0);
-console.log("finish..."); */
+console.log("finish..."); 
 //Output:
-/*
 Start...
 finish...
 Zero Second
@@ -665,16 +665,17 @@ const dirPath = path.join(__dirname,'crud');
 const filePath = `${dirPath}/Hello.txt`;
 
 //fs.writeFileSync(filePath,"Hello World"); // Create File
-/*fs.readFile(filePath, 'utf-8', (err,file) => { //Read File
+fs.readFile(filePath, 'utf-8', (err,file) => { //Read File
     console.log(file);
-})*/
-/*fs.appendFile(filePath, ', I am Anjali!!', (err) =>{ //Update File
+})
+fs.appendFile(filePath, ', I am Anjali!!', (err) =>{ //Update File
     if(!err) console.log("File Updated");
-})*/
-/*fs.rename(filePath, `${dirPath}/helloWorld.txt`, (err) => { //Rename File
+})
+fs.rename(filePath, `${dirPath}/helloWorld.txt`, (err) => { //Rename File
     if(!err) console.log("File Renamed");
-})*/
+})
 //fs.unlinkSync(`${dirPath}/helloWorld.txt`); //Delete File
+*/
 
 /* use path module
 const fs = require('fs');
