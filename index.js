@@ -1,3 +1,22 @@
+//Node js POST API with MySQL
+const express = require("express");
+const con = require("./APIs-MySQL/config");
+const app = express();
+
+app.use(express.json());
+
+app.post("/", (req, res) => {
+    //Static data : const data = {name: "Anjali", password:"3030", user_type:"visitor"};
+    //For Postman : 
+    const data = req.body;
+    con.query("INSERT INTO users SET?", data, (error, result, fields) => {
+        if(error) error;
+        res.send(result);
+    })
+});
+
+app.listen(5000);
+
 //Node js GET API with MySQL
 /*const express = require("express");
 const con = require("./APIs-MySQL/config");
