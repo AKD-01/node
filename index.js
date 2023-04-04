@@ -1,5 +1,15 @@
 //Node js PUT API with MySQL
+const express = require("express");
+const con = require("./APIs-MySQL/config");
+const app = express();
 
+app.use(express.json());
+
+app.put("/", (req, res) => {
+    
+});
+
+app.listen(5000);
 
 //Node js POST API with MySQL
 /*const express = require("express");
