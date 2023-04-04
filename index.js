@@ -1,5 +1,5 @@
 //Node connect with MY SQL
-const mysql = require("mysql");
+/*const mysql = require("mysql");
 
 const con = mysql.createConnection({
   host: "localhost",
@@ -19,6 +19,7 @@ con.connect((err) => {
 con.query("select * from users", (err, result) => {
   console.warn("result", result);
 });
+*/
 
 //Interview Question
 /*const x=10;
