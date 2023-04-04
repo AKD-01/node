@@ -1,3 +1,20 @@
+//Node js DELETE API with MySQL
+const express = require("express");
+const con = require("./APIs-MySQL/config");
+const app = express();
+
+app.use(express.json());
+
+//For Postman
+app.delete("/:id", (req, res) => {
+    con.query("DELETE FROM users WHERE id =" + req.params.id, (error, results) => {
+        if(error) throw error;
+        res.send(results);
+    });
+});
+
+app.listen(5000);
+
 //Node js PUT API with MySQL
 /*const express = require("express");
 const con = require("./APIs-MySQL/config");
