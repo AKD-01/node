@@ -1,5 +1,5 @@
 //Node js GET API with MySQL
-const express = require("express");
+/*const express = require("express");
 const con = require("./APIs-MySQL/config");
 const app = express();
 
@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(5000);
+*/
 
 //Node connect with MY SQL
 /*const mysql = require("mysql");
