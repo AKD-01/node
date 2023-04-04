@@ -5,12 +5,21 @@ const app = express();
 
 app.use(express.json());
 
-app.put("/", (req, res) => {
-    const data = ["tony", '0000', "reader", 10];
+/*app.put("/", (req, res) => {
+    const data = ["tony", '0000', "reader", 10]; //For static data
     con.query("UPDATE users SET name = ?, password = ?, user_type = ? where id = ?", data, (err, result, fields) => {
         if(err) throw error;
         res.send(result);
     });
+});*/
+
+//For Postman
+app.put("/:id", (req, res) => {
+    const data = [req.body.name, req.body.password, req.body.user_type, req.params.id];
+    con.query("UPDATE users SET name =?, password = ?, user_type = ? where id = ?", data, (err, result, fields) => {
+        if(err) throw error;
+        res.send(result);
+    }); 
 });
 
 app.listen(5000);
