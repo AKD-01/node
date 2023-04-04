@@ -1,3 +1,10 @@
+//Interview Question
+/*const x=10;
+console.log(x++);
+Output : ERROR!!
+As x is a constant variable we can't increment or decrement its value so console.log(x++) will give an error.
+*/
+
 //Events and EventEmitter
 /*const express = require("express");
 const EventEmitter = require("events");
