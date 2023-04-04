@@ -6,7 +6,11 @@ const app = express();
 app.use(express.json());
 
 app.put("/", (req, res) => {
-    
+    const data = ["tony", '0000', "reader", 10];
+    con.query("UPDATE users SET name = ?, password = ?, user_type = ? where id = ?", data, (err, result, fields) => {
+        if(err) throw error;
+        res.send(result);
+    });
 });
 
 app.listen(5000);
@@ -23,7 +27,7 @@ app.post("/", (req, res) => {
     //For Postman : 
     const data = req.body;
     con.query("INSERT INTO users SET?", data, (error, result, fields) => {
-        if(error) error;
+        if(error) throw error;
         res.send(result);
     })
 });
