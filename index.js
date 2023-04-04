@@ -1,4 +1,12 @@
+const express = require("express");
+const con = require("./APIs-MySQL/config");
+const app = express();
 
+app.get("/", (req, res) => {
+  res.send("done");
+});
+
+app.listen(5000);
 
 //Node connect with MY SQL
 /*const mysql = require("mysql");
