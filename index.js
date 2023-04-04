@@ -1,17 +1,17 @@
 //Node js PUT API with MySQL
-const express = require("express");
+/*const express = require("express");
 const con = require("./APIs-MySQL/config");
 const app = express();
 
 app.use(express.json());
 
-/*app.put("/", (req, res) => {
+app.put("/", (req, res) => {
     const data = ["tony", '0000', "reader", 10]; //For static data
     con.query("UPDATE users SET name = ?, password = ?, user_type = ? where id = ?", data, (err, result, fields) => {
         if(err) throw error;
         res.send(result);
     });
-});*/
+});
 
 //For Postman
 app.put("/:id", (req, res) => {
@@ -23,6 +23,7 @@ app.put("/:id", (req, res) => {
 });
 
 app.listen(5000);
+*/
 
 //Node js POST API with MySQL
 /*const express = require("express");
